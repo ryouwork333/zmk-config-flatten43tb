@@ -177,11 +177,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Hyper+[
+  - Hyper+]
+  - Hyper+=
+  - Sft+Ctl+4
+  - Meh+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
