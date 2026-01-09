@@ -149,10 +149,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&kp LA(LC(LG(LS(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &kp LS(LA(LC(LG(EQUAL))))  &kp LS(LC(NUMBER_4))  &kp LS(LA(LC(NUMBER_4)))                      &trans  &trans    &trans    &trans  &trans
+&trans                            &trans                             &trans                     &trans                &trans                    &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans                            &trans                             &trans                     &trans                &trans                    &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans                            &trans                             &trans                     &trans                &trans                    &trans      &trans  &trans                              &trans
             >;
         };
 
