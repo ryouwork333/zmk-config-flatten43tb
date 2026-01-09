@@ -11,39 +11,39 @@ layers:
   - {t: I, h: SCROLL}
   - O
   - P
-  - A
+  - {t: A, h: LCTRL}
   - S
   - D
   - F
   - G
   - Sft+Gui+S
-  - '-'
+  - A
   - H
   - J
   - K
-  - L
-  - ENTER
-  - {t: Z, h: LEFT SHIFT}
+  - {t: L, h: ARROW}
+  - {t: ENTER, h: NUM}
+  - Z
   - X
   - C
   - V
   - B
-  - ':'
-  - ;
+  - A
+  - A
   - N
   - M
   - ','
   - .
-  - Gui+-
-  - LCTRL
-  - LEFT WIN
-  - LEFT ALT
+  - '-'
+  - A
+  - A
+  - A
   - {t: '&to_layer_0 INT_HENKAN', h: '6'}
-  - {t: SPACE, h: NUM}
-  - {t: '&to_layer_0 INT_MUHENKAN', h: ARROW}
+  - {t: SPACE, h: LEFT WIN}
+  - {t: LANG2, h: LEFT SHIFT}
+  - {t: RIGHT WIN, h: LANG1}
   - BACKSPACE
-  - BACKSPACE
-  - DEL
+  - ESC
   FUNCTION:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -110,7 +110,7 @@ layers:
   - '@'
   - '#'
   - $
-  - '%'
+  - {t: '%', type: held}
   - {t: KP 0, h: LEFT SHIFT}
   - KP 1
   - KP 2
@@ -127,7 +127,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -153,7 +153,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
