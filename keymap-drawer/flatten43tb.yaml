@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - Sft+Gui+S
-  - A
+  - {t: ▽, type: trans}
   - H
   - J
   - K
@@ -28,18 +28,18 @@ layers:
   - C
   - V
   - B
-  - A
-  - A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
   - .
   - '-'
-  - A
-  - A
-  - A
-  - {t: '&to_layer_0 INT_HENKAN', h: '6'}
-  - {t: SPACE, h: LEFT WIN}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ALT
+  - SPACE
   - {t: LANG2, h: LEFT SHIFT}
   - {t: RIGHT WIN, h: LANG1}
   - BACKSPACE
@@ -94,44 +94,44 @@ layers:
   - KP 8
   - KP 9
   - +
-  - ^
-  - '&'
-  - '~'
   - (
   - )
+  - '"'
+  - '&'
+  - '@'
   - /
   - KP 4
   - KP 5
   - KP 6
   - '*'
   - Ctl+Alt+KP 0
-  - _
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - {t: '%', type: held}
-  - {t: KP 0, h: LEFT SHIFT}
+  - '%'
+  - LEFT ARROW
+  - UP ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - {type: held}
+  - KP 0
   - KP 1
   - KP 2
   - KP 3
   - .
   - '='
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - '{'
-  - '}'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '#'
+  - ':'
   - '|'
+  - '!'
+  - '?'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   ARROW:
   - ESCAPE
   - Ctl+Sft+TAB
@@ -302,7 +302,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
