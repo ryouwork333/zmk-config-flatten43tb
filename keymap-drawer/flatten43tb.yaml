@@ -176,50 +176,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MOUSE:
-  - Hyper+[
-  - Hyper+]
-  - Hyper+=
-  - Sft+Ctl+4
-  - Meh+4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -254,6 +210,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MOUSE:
+  - Hyper+[
+  - Hyper+]
+  - Hyper+=
+  - Sft+Ctl+4
+  - Meh+4
+  - Sft+Ctl+Gui+W
+  - Gui+T
+  - {t: ▽, type: trans}
+  - Gui+W
+  - Ctl+Sft+Gui+B
+  - Hyper+F7
+  - Hyper+F6
+  - Hyper+F5
+  - Hyper+F4
+  - Hyper+G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Hyper+F3
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - Gui+L
+  - {t: ▽, type: trans}
+  - Hyper+F12
+  - Hyper+F10
+  - Hyper+F10
+  - Hyper+F9
+  - Hyper+F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Hyper+F1
+  - Gui+LEFT ARROW
+  - Gui+RIGHT ARROW
+  - Gui+Sft+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
