@@ -109,10 +109,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W   &kp E   &kp R         &kp T                                                     &kp Y          &kp U  &lt 4 I    &kp O    &kp P
-&mt LCTRL A  &kp S   &kp D   &kp F         &kp G      &kp LS(LG(S))             &trans               &kp H          &kp J  &kp K      &kp L    &lt 2 ENTER
-&kp Z        &kp X   &kp C   &kp V         &kp B      &trans                    &trans               &kp N          &kp M  &kp COMMA  &kp DOT  &lt 1 MINUS
-&trans       &trans  &trans  &kp LEFT_ALT  &kp SPACE  &mt LEFT_SHIFT LANG2      &mt LANG1 RIGHT_WIN  &kp BACKSPACE                             &kp ESC
+&kp Q        &kp W   &kp E   &kp R         &kp T                                                          &kp Y          &kp U  &lt 4 I    &kp O    &kp P
+&mt LCTRL A  &kp S   &kp D   &kp F         &kp G      &kp LS(LG(S))                  &trans               &kp H          &kp J  &kp K      &kp L    &lt 2 ENTER
+&kp Z        &kp X   &kp C   &kp V         &kp B      &trans                         &trans               &kp N          &kp M  &kp COMMA  &kp DOT  &lt 1 MINUS
+&trans       &trans  &trans  &kp LEFT_ALT  &kp SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1  &kp BACKSPACE                             &kp ESC
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
@@ -132,7 +132,7 @@
         NUM {
             bindings = <
 &kp MINUS        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp AMPERSAND    &kp AT_SIGN
-&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERCENT  &kp LEFT_ARROW        &kp UP_ARROW           &kp DOWN_ARROW     &kp RIGHT_ARROW  &trans
+&kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERCENT  &kp LEFT_ARROW        &kp DOWN_ARROW         &kp UP_ARROW       &kp RIGHT_ARROW  &trans
 &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp HASH     &kp COLON             &kp PIPE               &kp EXCLAMATION    &kp QUESTION     &trans
 &trans           &trans           &trans           &trans           &trans        &trans                       &trans       &trans                                                                           &trans
             >;
@@ -158,7 +158,7 @@
 
         MOUSE {
             bindings = <
-&kp LA(LC(LG(LS(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &kp LS(LA(LC(LG(EQUAL))))  &kp LS(LC(NUMBER_4))    &kp LS(LA(LC(NUMBER_4)))                      &kp LS(LC(LG(W)))       &kp LG(T)           &trans               &kp LG(W)      &kp LC(LS(LG(B)))
+&kp LA(LC(LG(LS(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &kp LS(LA(LC(LG(EQUAL))))  &kp LS(LG(NUMBER_4))    &kp LS(LG(LC(NUMBER_4)))                      &kp LS(LC(LG(W)))       &kp LG(T)           &trans               &kp LG(W)      &kp LC(LS(LG(B)))
 &kp LS(LC(LG(LA(F7))))            &kp LA(LS(LC(LG(F6))))             &kp LS(LA(LG(LC(F5))))     &kp LS(LC(LA(LG(F4))))  &kp LS(LA(LC(LG(G))))     &trans      &trans  &kp LS(LA(LC(LG(F3))))  &mkp MB1            &mkp MB2             &kp LG(L)      &trans
 &kp LS(LC(LA(LG(F12))))           &kp LS(LA(LC(LG(F10))))            &kp LS(LA(LC(LG(F10))))    &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F9))))    &trans      &trans  &kp LS(LA(LC(LG(F1))))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LS(T))  &trans
 &trans                            &trans                             &trans                     &trans                  &trans                    &trans      &trans  &trans                                                                          &trans
