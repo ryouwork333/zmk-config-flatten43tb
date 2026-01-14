@@ -254,7 +254,7 @@ layers:
   - Gui+LEFT ARROW
   - Gui+RIGHT ARROW
   - Gui+Sft+T
-  - {t: ▽, type: trans}
+  - Hyper+F2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
