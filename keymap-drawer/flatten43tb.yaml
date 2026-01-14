@@ -40,8 +40,8 @@ layers:
   - {t: ▽, type: trans}
   - LEFT ALT
   - SPACE
-  - {t: LANG2, h: LEFT SHIFT}
-  - {t: RIGHT WIN, h: LANG1}
+  - {t: LANGUAGE 2, h: LEFT SHIFT}
+  - {t: LANG1, h: RIGHT GUI}
   - BACKSPACE
   - ESC
   FUNCTION:
@@ -107,8 +107,8 @@ layers:
   - Ctl+Alt+KP 0
   - '%'
   - LEFT ARROW
-  - UP ARROW
   - DOWN ARROW
+  - UP ARROW
   - RIGHT ARROW
   - {type: held}
   - KP 0
@@ -224,8 +224,8 @@ layers:
   - Hyper+[
   - Hyper+]
   - Hyper+=
-  - Sft+Ctl+4
-  - Meh+4
+  - Sft+Gui+4
+  - Sft+Gui+Ctl+4
   - Sft+Ctl+Gui+W
   - Gui+T
   - {t: ▽, type: trans}
