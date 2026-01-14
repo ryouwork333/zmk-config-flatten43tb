@@ -22,10 +22,10 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 700>;            // オートマウスレイヤー（AML）: トラックボール動作時に自動的にレイヤー4を有効化（700ms）
+        input-processors = <&zip_temp_layer 5 300>;            // オートマウスレイヤー（AML）: トラックボール動作時に自動的にレイヤー4を有効化（700ms）
 
         scroller {
-            layers = <5>;                                      // スクロールレイヤー
+            layers = <4>;                                      // スクロールレイヤー
             input-processors = <
                 &zip_xy_to_scroll_mapper                       // XY移動でスクロール
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT // スクロールのX軸を反転
