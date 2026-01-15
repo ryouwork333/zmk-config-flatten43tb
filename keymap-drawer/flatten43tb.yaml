@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - {t: ▽, type: trans}
+  - Hyper+TAB
   - Gui+Sft+Ctl+4
   - N
   - M
