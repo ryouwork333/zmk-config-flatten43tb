@@ -45,28 +45,13 @@
         compatible = "zmk,combos";
 
         tab {
-            bindings = <&kp TAB>;
+            bindings = <&kp LS(TAB)>;
             key-positions = <11 12>;
         };
 
         shift_tab {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp TAB>;
             key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
     };
 
@@ -109,10 +94,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W   &kp E   &kp R         &kp T                                                          &kp Y          &kp U  &lt 4 I    &kp O    &kp P
-&mt LCTRL A  &kp S   &kp D   &kp F         &kp G      &kp LS(LG(S))                  &trans               &kp H          &kp J  &kp K      &kp L    &lt 2 ENTER
-&kp Z        &kp X   &kp C   &kp V         &kp B      &trans                         &trans               &kp N          &kp M  &kp COMMA  &kp DOT  &lt 1 MINUS
-&trans       &trans  &trans  &kp LEFT_ALT  &kp SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1  &kp BACKSPACE                             &kp ESC
+&kp Q        &kp W   &kp E   &kp R         &kp T                                                                   &kp Y          &kp U  &lt 4 I    &kp O    &kp P
+&mt LCTRL A  &kp S   &kp D   &kp F         &kp G               &kp LS(LG(S))                  &trans               &kp H          &kp J  &kp K      &kp L    &lt 2 ENTER
+&kp Z        &kp X   &kp C   &kp V         &kp B               &trans                         &trans               &kp N          &kp M  &kp COMMA  &kp DOT  &lt 1 MINUS
+&trans       &trans  &trans  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1  &kp BACKSPACE                             &kp ESC
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
