@@ -55,12 +55,12 @@
 
         back {
             bindings = <&kp LG(LEFT_ARROW)>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
         };
 
         next {
             bindings = <&kp LG(RIGHT_ARROW)>;
-            key-positions = <19 18>;
+            key-positions = <19 20>;
         };
 
         l-split {
