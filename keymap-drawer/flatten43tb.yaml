@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - Sft+Gui+S
-  - {t: ▽, type: trans}
+  - Gui+Sft+KP 4
   - H
   - J
   - K
@@ -29,13 +29,13 @@ layers:
   - V
   - B
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Sft+Ctl+4
   - N
   - M
   - ','
   - .
   - {t: '-', h: FUNCTION}
-  - {t: ▽, type: trans}
+  - Hyper+F1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT ALT
@@ -177,21 +177,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE:
-  - Hyper+[
-  - Hyper+]
-  - Hyper+=
-  - Sft+Gui+4
-  - Sft+Gui+Ctl+4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Sft+Ctl+Gui+W
   - Gui+T
   - {t: ▽, type: trans}
   - Gui+W
   - Ctl+Sft+Gui+B
-  - Hyper+F7
-  - Hyper+F6
-  - Hyper+F5
-  - Hyper+F4
-  - Hyper+G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Hyper+F3
@@ -199,16 +199,16 @@ layers:
   - '&mkp MB2'
   - Gui+L
   - {t: ▽, type: trans}
-  - Hyper+F12
-  - Hyper+F10
-  - Hyper+F10
-  - Hyper+F9
-  - Hyper+F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Hyper+F1
-  - Gui+LEFT ARROW
-  - Gui+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Gui+Sft+T
   - Hyper+F2
   - {t: ▽, type: trans}
@@ -229,7 +229,13 @@ combos:
   k: '&mkp MB1'
 - p: [19, 18]
   k: '&mkp MB2'
-- p: [30, 31]
+- p: [17, 6]
   k: Gui+LEFT ARROW
-- p: [31, 32]
+- p: [19, 8]
   k: Gui+RIGHT ARROW
+- p: [1, 2]
+  k: Hyper+[
+- p: [2, 3]
+  k: Hyper+]
+- p: [1, 2, 3]
+  k: Hyper+=
