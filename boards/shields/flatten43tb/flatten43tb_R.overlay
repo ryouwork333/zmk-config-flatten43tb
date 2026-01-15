@@ -1,4 +1,4 @@
-#include "flatten43tb.dtsi"
+j#include "flatten43tb.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
@@ -22,7 +22,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 120>;
+        input-processors = <&zip_temp_layer 4 180>;
        
     scroller {
         layers = <3>;
