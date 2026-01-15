@@ -10,7 +10,7 @@ layers:
   - U
   - {t: I, h: SCROLL}
   - O
-  - P
+  - {t: P, h: FUNCTION}
   - {t: A, h: LCTRL}
   - S
   - D
@@ -34,7 +34,7 @@ layers:
   - M
   - ','
   - .
-  - {t: '-', h: FUNCTION}
+  - AltGr+-
   - Hyper+F1
   - Hyper+F2
   - Hyper+F3
@@ -94,11 +94,11 @@ layers:
   - F3
   - F4
   - F5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Sft+Ctl+W
+  - Gui+T
+  - Gui+L
   - Gui+W
-  - Gui+Sft+T
+  - {type: held}
   - F6
   - F7
   - F8
@@ -109,7 +109,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Sft+T
   - {t: ▽, type: trans}
   - F11
   - F12
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -182,8 +182,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Ctl+Gui+W
-  - Gui+T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,7 +197,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - Gui+L
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
