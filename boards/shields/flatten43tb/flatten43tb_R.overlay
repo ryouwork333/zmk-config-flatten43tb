@@ -22,11 +22,6 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
-        input-processors = <
-            &zip_deadzone_filter 2
-            &zip_temp_layer 4 300
-        >;
        
     scroller {
         layers = <3>;
