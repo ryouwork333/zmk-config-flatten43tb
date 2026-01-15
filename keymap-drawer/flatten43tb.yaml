@@ -36,8 +36,8 @@ layers:
   - .
   - {t: '-', h: FUNCTION}
   - Hyper+F1
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Hyper+F2
+  - Hyper+F3
   - LEFT ALT
   - {t: SPACE, h: LEFT GUI}
   - {t: LANGUAGE 2, h: LEFT SHIFT}
@@ -97,8 +97,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+W
+  - Gui+Sft+T
   - F6
   - F7
   - F8
@@ -185,8 +185,6 @@ layers:
   - Sft+Ctl+Gui+W
   - Gui+T
   - {t: ▽, type: trans}
-  - Gui+W
-  - Ctl+Sft+Gui+B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -194,7 +192,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Hyper+F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
   - Gui+L
@@ -206,11 +206,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Hyper+F1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Sft+T
-  - Hyper+F2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
