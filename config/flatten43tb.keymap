@@ -53,24 +53,14 @@
             key-positions = <12 13>;
         };
 
-        l-click {
-            bindings = <&mkp MB1>;
-            key-positions = <18 7>;
-        };
-
-        r-click {
-            bindings = <&mkp MB2>;
-            key-positions = <19 18>;
-        };
-
         back {
             bindings = <&kp LG(LEFT_ARROW)>;
-            key-positions = <17 6>;
+            key-positions = <17 18>;
         };
 
         next {
             bindings = <&kp LG(RIGHT_ARROW)>;
-            key-positions = <19 8>;
+            key-positions = <19 18>;
         };
 
         l-split {
