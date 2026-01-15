@@ -225,9 +225,9 @@ combos:
   k: Sft+TAB
 - p: [12, 13]
   k: TAB
-- p: [17, 18]
+- p: [18, 19]
   k: Gui+LEFT ARROW
-- p: [19, 18]
+- p: [19, 20]
   k: Gui+RIGHT ARROW
 - p: [1, 2]
   k: Hyper+[
