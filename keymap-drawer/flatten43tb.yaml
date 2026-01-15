@@ -132,94 +132,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MOUSE:
-  - Hyper+[
-  - Hyper+]
-  - Hyper+=
-  - Sft+Gui+4
-  - Sft+Gui+Ctl+4
-  - Sft+Ctl+Gui+W
-  - Gui+T
-  - {t: ▽, type: trans}
-  - Gui+W
-  - Ctl+Sft+Gui+B
-  - Hyper+F7
-  - Hyper+F6
-  - Hyper+F5
-  - Hyper+F4
-  - Hyper+G
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Hyper+F3
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - Gui+L
-  - {t: ▽, type: trans}
-  - Hyper+F12
-  - Hyper+F10
-  - Hyper+F10
-  - Hyper+F9
-  - Hyper+F9
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Hyper+F1
-  - Gui+LEFT ARROW
-  - Gui+RIGHT ARROW
-  - Gui+Sft+T
-  - Hyper+F2
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  ARROW:
-  - ESCAPE
-  - Ctl+Sft+TAB
-  - UP ARROW
-  - Ctl+TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - Gui+Sft+LEFT ARROW
-  - {t: ▽, type: trans}
-  - Gui+Sft+RIGHT ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -264,14 +176,58 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  MOUSE:
+  - Hyper+[
+  - Hyper+]
+  - Hyper+=
+  - Sft+Gui+4
+  - Sft+Gui+Ctl+4
+  - Sft+Ctl+Gui+W
+  - Gui+T
+  - {t: ▽, type: trans}
+  - Gui+W
+  - Ctl+Sft+Gui+B
+  - Hyper+F7
+  - Hyper+F6
+  - Hyper+F5
+  - Hyper+F4
+  - Hyper+G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Hyper+F3
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - Gui+L
+  - {t: ▽, type: trans}
+  - Hyper+F12
+  - Hyper+F10
+  - Hyper+F10
+  - Hyper+F9
+  - Hyper+F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Hyper+F1
+  - Gui+LEFT ARROW
+  - Gui+RIGHT ARROW
+  - Gui+Sft+T
+  - Hyper+F2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
   k: Sft+TAB
 - p: [12, 13]
   k: TAB
-- p: [18, 19]
+- p: [18, 7]
   k: '&mkp MB1'
-- p: [19, 20]
+- p: [19, 18]
   k: '&mkp MB2'
 - p: [30, 31]
   k: Gui+LEFT ARROW
