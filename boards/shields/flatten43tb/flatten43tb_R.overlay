@@ -22,6 +22,11 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        input-processors = <
+            &zip_deadzone_filter 2
+            &zip_temp_layer 5 300
+        >;
        
     scroller {
         layers = <3>;
@@ -73,6 +78,6 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         invert-y;     // マウス操作のY軸を反転
-        cpi = <800>;  // マウス感度
+        cpi = <600>;  // マウス感度
     };
 };
