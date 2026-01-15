@@ -128,9 +128,9 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                   &kp E                   &kp R         &kp T                                                                        &kp Y          &kp U  &lt 3 I    &kp O    &kp P
+&kp Q                   &kp W                   &kp E                   &kp R         &kp T                                                                        &kp Y          &kp U  &lt 3 I    &kp O    &lt 2 P
 &mt LCTRL A             &kp S                   &kp D                   &kp F         &kp G               &kp LS(LG(S))                  &kp LG(LS(KP_N4))         &kp H          &kp J  &kp K      &kp L    &lt 1 ENTER
-&kp Z                   &kp X                   &kp C                   &kp V         &kp B               &trans                         &kp LG(LS(LC(NUMBER_4)))  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 2 MINUS
+&kp Z                   &kp X                   &kp C                   &kp V         &kp B               &trans                         &kp LG(LS(LC(NUMBER_4)))  &kp N          &kp M  &kp COMMA  &kp DOT  &kp RA(MINUS)
 &kp LS(LC(LA(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1       &kp BACKSPACE                             &kp ESC
             >;
 
@@ -148,10 +148,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                       &trans  &trans  &trans  &kp LG(W)  &kp LG(LS(T))
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans      &trans  &trans  &trans  &trans  &trans     &trans
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans      &trans  &trans  &trans  &trans  &trans     &trans
-&trans   &trans   &trans   &trans   &trans   &trans      &trans  &trans                             &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                       &kp LG(LS(LC(W)))  &kp LG(T)  &kp LG(L)  &kp LG(W)      &trans
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans      &trans  &trans             &trans     &trans     &kp LG(LS(T))  &trans
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans      &trans  &trans             &trans     &trans     &trans         &trans
+&trans   &trans   &trans   &trans   &trans   &trans      &trans  &trans                                                  &trans
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -168,10 +168,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp LS(LC(LG(W)))  &kp LG(T)  &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &mkp MB1   &mkp MB2  &kp LG(L)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans     &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                             &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
     };
