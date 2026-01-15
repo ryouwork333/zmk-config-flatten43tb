@@ -65,12 +65,27 @@
 
         back {
             bindings = <&kp LG(LEFT_ARROW)>;
-            key-positions = <30 31>;
+            key-positions = <17 6>;
         };
 
         next {
             bindings = <&kp LG(RIGHT_ARROW)>;
-            key-positions = <31 32>;
+            key-positions = <19 8>;
+        };
+
+        l-split {
+            bindings = <&kp LS(LA(LC(LG(LEFT_BRACKET))))>;
+            key-positions = <1 2>;
+        };
+
+        r-split {
+            bindings = <&kp LS(LA(LC(LG(RIGHT_BRACKET))))>;
+            key-positions = <2 3>;
+        };
+
+        full {
+            bindings = <&kp LS(LA(LC(LG(EQUAL))))>;
+            key-positions = <1 2 3>;
         };
     };
 
@@ -113,10 +128,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W   &kp E   &kp R         &kp T                                                                   &kp Y          &kp U  &lt 3 I    &kp O    &kp P
-&mt LCTRL A  &kp S   &kp D   &kp F         &kp G               &kp LS(LG(S))                  &trans               &kp H          &kp J  &kp K      &kp L    &lt 1 ENTER
-&kp Z        &kp X   &kp C   &kp V         &kp B               &trans                         &trans               &kp N          &kp M  &kp COMMA  &kp DOT  &lt 2 MINUS
-&trans       &trans  &trans  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1  &kp BACKSPACE                             &kp ESC
+&kp Q                   &kp W   &kp E   &kp R         &kp T                                                                        &kp Y          &kp U  &lt 3 I    &kp O    &kp P
+&mt LCTRL A             &kp S   &kp D   &kp F         &kp G               &kp LS(LG(S))                  &kp LG(LS(KP_N4))         &kp H          &kp J  &kp K      &kp L    &lt 1 ENTER
+&kp Z                   &kp X   &kp C   &kp V         &kp B               &trans                         &kp LG(LS(LC(NUMBER_4)))  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 2 MINUS
+&kp LS(LC(LA(LG(F1))))  &trans  &trans  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1       &kp BACKSPACE                             &kp ESC
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
@@ -153,10 +168,10 @@
 
         MOUSE {
             bindings = <
-&kp LA(LC(LG(LS(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &kp LS(LA(LC(LG(EQUAL))))  &kp LS(LG(NUMBER_4))    &kp LS(LG(LC(NUMBER_4)))                      &kp LS(LC(LG(W)))       &kp LG(T)           &trans               &kp LG(W)      &kp LC(LS(LG(B)))
-&kp LS(LC(LG(LA(F7))))            &kp LA(LS(LC(LG(F6))))             &kp LS(LA(LG(LC(F5))))     &kp LS(LC(LA(LG(F4))))  &kp LS(LA(LC(LG(G))))     &trans      &trans  &kp LS(LA(LC(LG(F3))))  &mkp MB1            &mkp MB2             &kp LG(L)      &trans
-&kp LS(LC(LA(LG(F12))))           &kp LS(LA(LC(LG(F10))))            &kp LS(LA(LC(LG(F10))))    &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F9))))    &trans      &trans  &kp LS(LA(LC(LG(F1))))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LS(T))  &kp LA(LS(LC(LG(F2))))
-&trans                            &trans                             &trans                     &trans                  &trans                    &trans      &trans  &trans                                                                          &trans
+&trans  &trans  &trans  &trans  &trans                      &kp LS(LC(LG(W)))       &kp LG(T)  &trans    &kp LG(W)      &kp LC(LS(LG(B)))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LA(LC(LG(F3))))  &mkp MB1   &mkp MB2  &kp LG(L)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LA(LC(LG(F1))))  &trans     &trans    &kp LG(LS(T))  &kp LA(LS(LC(LG(F2))))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &trans
             >;
         };
     };
