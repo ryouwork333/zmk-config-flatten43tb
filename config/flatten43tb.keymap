@@ -55,12 +55,12 @@
 
         l-click {
             bindings = <&mkp MB1>;
-            key-positions = <18 19>;
+            key-positions = <18 7>;
         };
 
         r-click {
             bindings = <&mkp MB2>;
-            key-positions = <19 20>;
+            key-positions = <19 18>;
         };
 
         back {
@@ -113,7 +113,7 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W   &kp E   &kp R         &kp T                                                                   &kp Y          &kp U  &lt 5 I    &kp O    &kp P
+&kp Q        &kp W   &kp E   &kp R         &kp T                                                                   &kp Y          &kp U  &lt 3 I    &kp O    &kp P
 &mt LCTRL A  &kp S   &kp D   &kp F         &kp G               &kp LS(LG(S))                  &trans               &kp H          &kp J  &kp K      &kp L    &lt 1 ENTER
 &kp Z        &kp X   &kp C   &kp V         &kp B               &trans                         &trans               &kp N          &kp M  &kp COMMA  &kp DOT  &lt 2 MINUS
 &trans       &trans  &trans  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1  &kp BACKSPACE                             &kp ESC
@@ -142,30 +142,21 @@
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        MOUSE {
-            bindings = <
-&kp LA(LC(LG(LS(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &kp LS(LA(LC(LG(EQUAL))))  &kp LS(LG(NUMBER_4))    &kp LS(LG(LC(NUMBER_4)))                      &kp LS(LC(LG(W)))       &kp LG(T)           &trans               &kp LG(W)      &kp LC(LS(LG(B)))
-&kp LS(LC(LG(LA(F7))))            &kp LA(LS(LC(LG(F6))))             &kp LS(LA(LG(LC(F5))))     &kp LS(LC(LA(LG(F4))))  &kp LS(LA(LC(LG(G))))     &trans      &trans  &kp LS(LA(LC(LG(F3))))  &mkp MB1            &mkp MB2             &kp LG(L)      &trans
-&kp LS(LC(LA(LG(F12))))           &kp LS(LA(LC(LG(F10))))            &kp LS(LA(LC(LG(F10))))    &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F9))))    &trans      &trans  &kp LS(LA(LC(LG(F1))))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LS(T))  &kp LA(LS(LC(LG(F2))))
-&trans                            &trans                             &trans                     &trans                  &trans                    &trans      &trans  &trans                                                                          &trans
-            >;
-        };
-
-        ARROW {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
-            >;
-        };
-
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&kp LA(LC(LG(LS(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &kp LS(LA(LC(LG(EQUAL))))  &kp LS(LG(NUMBER_4))    &kp LS(LG(LC(NUMBER_4)))                      &kp LS(LC(LG(W)))       &kp LG(T)           &trans               &kp LG(W)      &kp LC(LS(LG(B)))
+&kp LS(LC(LG(LA(F7))))            &kp LA(LS(LC(LG(F6))))             &kp LS(LA(LG(LC(F5))))     &kp LS(LC(LA(LG(F4))))  &kp LS(LA(LC(LG(G))))     &trans      &trans  &kp LS(LA(LC(LG(F3))))  &mkp MB1            &mkp MB2             &kp LG(L)      &trans
+&kp LS(LC(LA(LG(F12))))           &kp LS(LA(LC(LG(F10))))            &kp LS(LA(LC(LG(F10))))    &kp LS(LA(LC(LG(F9))))  &kp LS(LA(LC(LG(F9))))    &trans      &trans  &kp LS(LA(LC(LG(F1))))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LS(T))  &kp LA(LS(LC(LG(F2))))
+&trans                            &trans                             &trans                     &trans                  &trans                    &trans      &trans  &trans                                                                          &trans
             >;
         };
     };
