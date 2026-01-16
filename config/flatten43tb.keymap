@@ -118,10 +118,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                   &kp E                   &kp R         &kp T                                                                        &kp Y          &kp U  &lt 3 I    &kp O    &lt 2 P
-&mt LCTRL A             &kp S                   &kp D                   &kp F         &kp G               &kp LS(LG(S))                  &kp LG(LS(KP_N4))         &kp H          &kp J  &kp K      &kp L    &lt 1 ENTER
-&kp Z                   &kp X                   &kp C                   &kp V         &kp B               &mo 4                          &kp LG(LS(LC(NUMBER_4)))  &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LS(LC(LA(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1       &kp BACKSPACE                             &kp ESC
+&kp Q                   &kp W                   &kp E                   &kp R         &kp T                                                                        &kp Y                        &kp U  &lt 3 I    &kp O    &lt 2 P
+&mt LCTRL A             &kp S                   &kp D                   &kp F         &kp G               &kp LS(LG(S))                  &kp LG(LS(KP_N4))         &kp H                        &kp J  &kp K      &kp L    &lt 1 ENTER
+&kp Z                   &kp X                   &kp C                   &kp V         &kp B               &kp LS(LA(LC(LG(TAB))))        &kp LG(LS(LC(NUMBER_4)))  &kp N                        &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp LS(LC(LA(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1       &mt RIGHT_CONTROL BACKSPACE                             &kp ESC
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
@@ -132,7 +132,7 @@
 &kp MINUS        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp AMPERSAND    &kp AT_SIGN
 &kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERCENT  &kp LEFT_ARROW        &kp DOWN_ARROW         &kp UP_ARROW       &kp RIGHT_ARROW  &trans
 &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp HASH     &kp COLON             &kp PIPE               &kp EXCLAMATION    &kp QUESTION     &trans
-&trans           &trans           &trans           &trans           &trans        &trans                       &trans       &kp LEFT_CONTROL                                                                 &trans
+&trans           &trans           &trans           &trans           &trans        &trans                       &trans       &trans                                                                           &trans
             >;
         };
 
