@@ -120,7 +120,7 @@
             bindings = <
 &kp Q                   &kp W                   &kp E                   &kp R         &kp T                                                                        &kp Y          &kp U  &lt 3 I    &kp O    &lt 2 P
 &mt LCTRL A             &kp S                   &kp D                   &kp F         &kp G               &kp LS(LG(S))                  &kp LG(LS(KP_N4))         &kp H          &kp J  &kp K      &kp L    &lt 1 ENTER
-&kp Z                   &kp X                   &kp C                   &kp V         &kp B               &kp LS(LA(LC(LG(TAB))))        &kp LG(LS(LC(NUMBER_4)))  &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp Z                   &kp X                   &kp C                   &kp V         &kp B               &mo 4                          &kp LG(LS(LC(NUMBER_4)))  &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
 &kp LS(LC(LA(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1       &kp BACKSPACE                             &kp ESC
             >;
 
