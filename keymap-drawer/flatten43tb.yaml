@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - Hyper+TAB
+  - MOUSE
   - Gui+Sft+Ctl+4
   - N
   - M
@@ -204,7 +204,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
