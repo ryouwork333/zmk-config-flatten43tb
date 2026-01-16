@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - MOUSE
+  - Hyper+TAB
   - Gui+Sft+Ctl+4
   - N
   - M
@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LEFT GUI}
   - {t: LANGUAGE 2, h: LEFT SHIFT}
   - {t: LANG1, h: RIGHT GUI}
-  - BACKSPACE
+  - {t: BACKSPACE, h: RIGHT CONTROL}
   - ESC
   NUM:
   - '-'
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT CONTROL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FUNCTION:
   - {t: ▽, type: trans}
@@ -204,7 +204,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
