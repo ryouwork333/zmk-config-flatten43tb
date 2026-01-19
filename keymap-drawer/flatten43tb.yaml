@@ -73,12 +73,12 @@ layers:
   - KP 3
   - KP DOT
   - KP EQUAL
-  - '&'
   - ':'
-  - '|'
-  - '!'
-  - '?'
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - <
+  - '>'
+  - '&'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -105,7 +105,7 @@ layers:
   - F7
   - F8
   - {t: ▽, type: trans}
-  - Gui+Sft+4
+  - Gui+Sft+Ctl+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,7 +117,7 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - Sft+Gui+Alt+4
+  - Sft+Gui+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -240,6 +240,12 @@ combos:
 - p: [32, 31]
   k: '?'
 - p: [6, 7]
-  k: '['
+  k: Gui+Z
 - p: [8, 7]
-  k: ']'
+  k: Sft+Gui+Z
+- p: [30, 31, 32]
+  k: '|'
+- p: [23, 24]
+  k: Gui+C
+- p: [24, 25]
+  k: Sft+Gui+V
