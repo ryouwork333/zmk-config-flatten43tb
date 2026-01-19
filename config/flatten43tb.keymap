@@ -77,6 +77,26 @@
             bindings = <&kp LS(LA(LC(LG(EQUAL))))>;
             key-positions = <1 2 3>;
         };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <31 30>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <32 31>;
+        };
+
+        left {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        right {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 7>;
+        };
     };
 
     macros {
