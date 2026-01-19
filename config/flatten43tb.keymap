@@ -88,14 +88,29 @@
             key-positions = <32 31>;
         };
 
-        left {
-            bindings = <&kp LEFT_BRACKET>;
+        ando {
+            bindings = <&kp LG(Z)>;
             key-positions = <6 7>;
         };
 
-        right {
-            bindings = <&kp RIGHT_BRACKET>;
+        redo {
+            bindings = <&kp LS(LG(Z))>;
             key-positions = <8 7>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <30 31 32>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <23 24>;
+        };
+
+        paste {
+            bindings = <&kp LS(LG(V))>;
+            key-positions = <24 25>;
         };
     };
 
@@ -149,18 +164,18 @@
 
         NUM {
             bindings = <
-&kp KP_MINUS               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp AT_SIGN
-&mt LEFT_CONTROL KP_SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERCENT    &kp LEFT_ARROW        &kp DOWN_ARROW         &kp UP_ARROW      &kp RIGHT_ARROW    &trans
-&kp KP_NUMBER_0            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL                 &kp AMPERSAND  &kp COLON             &kp PIPE               &kp EXCLAMATION   &kp QUESTION       &trans
-&trans                     &trans           &trans           &trans           &trans           &trans                       &trans         &trans                                                                            &trans
+&kp KP_MINUS               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp AT_SIGN
+&mt LEFT_CONTROL KP_SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERCENT  &kp LEFT_ARROW        &kp DOWN_ARROW         &kp UP_ARROW      &kp RIGHT_ARROW    &trans
+&kp KP_NUMBER_0            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL                 &kp COLON    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN     &kp GREATER_THAN   &kp AMPERSAND
+&trans                     &trans           &trans           &trans           &trans           &trans                       &trans       &trans                                                                            &trans
             >;
         };
 
         FUNCTION {
             bindings = <
 &trans  &kp F1  &kp F2   &kp F3   &kp F4                                         &kp LG(LS(LC(W)))  &kp LG(T)  &kp LG(L)  &kp LG(W)      &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans      &kp LG(LS(NUMBER_4))      &trans             &trans     &trans     &kp LG(LS(T))  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &kp LS(LG(LA(NUMBER_4)))  &trans             &trans     &trans     &trans         &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans      &kp LG(LS(LC(NUMBER_4)))  &trans             &trans     &trans     &kp LG(LS(T))  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &kp LS(LG(NUMBER_4))      &trans             &trans     &trans     &trans         &trans
 &trans  &trans  &trans   &trans   &trans   &trans      &trans                    &trans                                                  &trans
             >;
 
