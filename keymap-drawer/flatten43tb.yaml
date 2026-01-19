@@ -46,9 +46,9 @@ layers:
   - ESCAPE
   NUM:
   - '-'
-  - KP 7
-  - KP 8
-  - KP 9
+  - '7'
+  - '8'
+  - '9'
   - +
   - (
   - )
@@ -56,9 +56,9 @@ layers:
   - '&'
   - '@'
   - {t: /, h: LEFT CONTROL}
-  - KP 4
-  - KP 5
-  - KP 6
+  - '4'
+  - '5'
+  - '6'
   - '*'
   - Ctl+Alt+KP 0
   - '%'
@@ -67,10 +67,10 @@ layers:
   - UP ARROW
   - RIGHT ARROW
   - {type: held}
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - .
   - '='
   - '#'
