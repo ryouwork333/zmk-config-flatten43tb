@@ -153,10 +153,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W   &kp E   &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I    &kp O    &lt 2 P
-&mt LCTRL A             &kp S   &kp D   &kp F         &kp G               &kp LS(LG(S))                  &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K      &kp L    &lt 1 ENTER
-&kp Z                   &kp X   &kp C   &kp V         &kp B               &kp LS(LA(LC(LG(F15))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LS(LC(LA(LG(F1))))  &trans  &trans  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1      &kp BACKSPACE                             &mt LS(LA(LC(LG(F2)))) ESCAPE
+&kp Q                   &kp W                    &kp E                    &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I    &kp O                   &lt 2 P
+&mt LCTRL A             &kp S                    &kp D                    &kp F         &kp G               &kp LS(LG(S))                  &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K      &mt RIGHT_CONTROL LBRC  &lt 1 ENTER
+&kp Z                   &kp X                    &kp C                    &kp V         &kp B               &kp LS(LA(LC(LG(F15))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &kp COMMA  &kp DOT                 &kp MINUS
+&kp LS(LC(LA(LG(F1))))  &kp LA(LS(LC(LG(F12))))  &kp LS(LA(LC(LG(F11))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1      &kp BACKSPACE                                            &mt LS(LA(LC(LG(F2)))) ESCAPE
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
@@ -173,10 +173,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4                                         &kp LG(LS(LC(W)))  &kp LG(T)  &kp LG(L)  &kp LG(W)      &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans      &kp LG(LS(LC(NUMBER_4)))  &trans             &trans     &trans     &kp LG(LS(T))  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans      &kp LS(LG(NUMBER_4))      &trans             &trans     &trans     &trans         &trans
-&trans  &trans  &trans   &trans   &trans   &trans      &trans                    &trans                                                  &trans
+&trans  &kp F7  &kp F8  &kp F9  &trans                                        &kp LG(LS(LC(W)))  &kp LG(T)  &kp LG(L)  &kp LG(W)      &trans
+&trans  &kp F4  &kp F5  &kp F6  &trans  &trans      &kp LG(LS(LC(NUMBER_4)))  &trans             &trans     &trans     &kp LG(LS(T))  &trans
+&trans  &kp F1  &kp F2  &kp F3  &trans  &trans      &kp LS(LG(NUMBER_4))      &trans             &trans     &trans     &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans                    &trans                                                  &trans
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -184,10 +184,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans                &kp LA(LG(NUMBER_7))  &kp LA(LG(NUMBER_8))  &kp LA(LG(NUMBER_9))  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans                &kp LA(LG(NUMBER_4))  &kp LA(LG(NUMBER_5))  &kp LA(LG(NUMBER_6))  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(LG(NUMBER_0))  &kp LG(LA(NUMBER_1))  &kp LA(LG(NUMBER_2))  &kp LA(LG(NUMBER_3))  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &trans                &trans                &trans                &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
