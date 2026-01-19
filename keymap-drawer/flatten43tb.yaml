@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - Sft+Gui+S
-  - Gui+Sft+KP 4
+  - Hyper+F13
   - H
   - J
   - K
@@ -28,22 +28,22 @@ layers:
   - C
   - V
   - B
-  - Hyper+TAB
-  - Gui+Sft+Ctl+4
+  - Hyper+F15
+  - Hyper+F14
   - N
   - M
   - ','
   - .
   - '-'
   - Hyper+F1
-  - Hyper+F2
-  - Hyper+F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT ALT
   - {t: SPACE, h: LEFT GUI}
   - {t: LANGUAGE 2, h: LEFT SHIFT}
   - {t: LANG1, h: RIGHT GUI}
   - BACKSPACE
-  - ESCAPE
+  - {t: ESCAPE, h: Hyper+F2}
   NUM:
   - KP MINUS
   - KP 7
@@ -52,8 +52,8 @@ layers:
   - KP PLUS
   - (
   - )
+  - ''''
   - '"'
-  - '&'
   - '@'
   - {t: KP SLASH, h: LEFT CONTROL}
   - KP 4
@@ -73,7 +73,7 @@ layers:
   - KP 3
   - KP DOT
   - KP EQUAL
-  - '#'
+  - '&'
   - ':'
   - '|'
   - '!'
@@ -105,7 +105,7 @@ layers:
   - F7
   - F8
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Sft+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,7 +117,7 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+Gui+Alt+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -240,6 +240,6 @@ combos:
 - p: [32, 31]
   k: '?'
 - p: [6, 7]
-  k: (
+  k: '['
 - p: [8, 7]
-  k: )
+  k: ']'
