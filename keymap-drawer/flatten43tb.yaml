@@ -45,21 +45,21 @@ layers:
   - BACKSPACE
   - ESCAPE
   NUM:
-  - '-'
-  - '7'
-  - '8'
-  - '9'
-  - +
+  - KP MINUS
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
   - (
   - )
   - '"'
   - '&'
   - '@'
-  - {t: /, h: LEFT CONTROL}
-  - '4'
-  - '5'
-  - '6'
-  - '*'
+  - {t: KP SLASH, h: LEFT CONTROL}
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP ASTERISK
   - Ctl+Alt+KP 0
   - '%'
   - LEFT ARROW
@@ -67,12 +67,12 @@ layers:
   - UP ARROW
   - RIGHT ARROW
   - {type: held}
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - .
-  - '='
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP DOT
+  - KP EQUAL
   - '#'
   - ':'
   - '|'
