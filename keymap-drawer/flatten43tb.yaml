@@ -78,7 +78,7 @@ layers:
   - '|'
   - '!'
   - '?'
-  - {t: ▽, type: trans}
+  - RIGHT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
