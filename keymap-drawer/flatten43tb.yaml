@@ -42,8 +42,8 @@ layers:
   - {t: SPACE, h: LEFT GUI}
   - {t: LANGUAGE 2, h: LEFT SHIFT}
   - {t: LANG1, h: RIGHT GUI}
-  - {t: BACKSPACE, h: RIGHT CONTROL}
-  - ESC
+  - BACKSPACE
+  - ESCAPE
   NUM:
   - '-'
   - KP 7
@@ -55,7 +55,7 @@ layers:
   - '"'
   - '&'
   - '@'
-  - /
+  - {t: /, h: LEFT CONTROL}
   - KP 4
   - KP 5
   - KP 6
@@ -78,7 +78,7 @@ layers:
   - '|'
   - '!'
   - '?'
-  - RIGHT CONTROL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
