@@ -21,7 +21,7 @@ layers:
   - H
   - J
   - K
-  - {t: '{', h: RIGHT CONTROL}
+  - {t: L, h: RIGHT CONTROL}
   - {t: ENTER, h: NUM}
   - Z
   - X
