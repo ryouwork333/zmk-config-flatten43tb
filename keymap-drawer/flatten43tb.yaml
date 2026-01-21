@@ -13,8 +13,8 @@ layers:
   - {t: P, h: FUNCTION}
   - {t: A, h: LCTRL}
   - S
-  - D
-  - {t: F, h: MOUSE}
+  - {t: D, h: MOUSE}
+  - F
   - G
   - Sft+Gui+S
   - Hyper+F13
@@ -189,8 +189,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
