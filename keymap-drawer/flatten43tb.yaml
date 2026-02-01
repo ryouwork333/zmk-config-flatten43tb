@@ -16,7 +16,7 @@ layers:
   - {t: D, h: MOUSE}
   - F
   - G
-  - Sft+Gui+S
+  - Hyper+F16
   - Hyper+F13
   - H
   - J
