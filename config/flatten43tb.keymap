@@ -153,10 +153,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                    &kp E                    &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I    &kp O                &kp P
-&mt LCTRL A             &kp S                    &kp D                    &kp F         &kp G               &kp LS(LG(LC(W)))              &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K      &mt RIGHT_CONTROL L  &lt 1 ENTER
-&kp Z                   &kp X                    &kp C                    &kp V         &kp B               &kp LS(LA(LC(LG(F15))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &kp COMMA  &kp DOT              &lt 2 MINUS
-&kp LS(LC(LA(LG(F1))))  &kp LA(LS(LC(LG(F12))))  &kp LS(LA(LC(LG(F11))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1      &kp BACKSPACE                                         &mt LS(LA(LC(LG(F2)))) ESCAPE
+&kp Q                   &kp W                    &kp E                      &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I    &kp O                &kp P
+&mt LCTRL A             &kp S                    &kp D                      &kp F         &kp G               &kp LS(LG(LC(W)))              &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K      &mt RIGHT_CONTROL L  &lt 1 ENTER
+&kp Z                   &kp X                    &kp C                      &kp V         &kp B               &kp LS(LA(LC(LG(F15))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &kp COMMA  &kp DOT              &lt 2 MINUS
+&kp LS(LC(LA(LG(F1))))  &kp LA(LS(LC(LG(F12))))  &lt 4 LS(LA(LC(LG(F11))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1      &kp BACKSPACE                                         &mt LS(LA(LC(LG(F2)))) ESCAPE
             >;
 
             sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
