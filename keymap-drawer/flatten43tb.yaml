@@ -10,13 +10,13 @@ layers:
   - U
   - {t: I, h: SCROLL}
   - O
-  - {t: P, h: FUNCTION}
+  - P
   - {t: A, h: LCTRL}
   - S
-  - {t: D, h: MOUSE}
+  - D
   - F
   - G
-  - Hyper+F16
+  - Sft+Gui+Ctl+W
   - Hyper+F13
   - H
   - J
@@ -34,7 +34,7 @@ layers:
   - M
   - ','
   - .
-  - '-'
+  - {t: '-', h: FUNCTION}
   - Hyper+F1
   - Hyper+F12
   - Hyper+F11
@@ -94,11 +94,11 @@ layers:
   - F8
   - F9
   - {t: ▽, type: trans}
-  - Gui+Sft+Ctl+W
-  - Gui+T
-  - Gui+L
-  - Gui+W
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F4
   - F5
@@ -109,7 +109,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Sft+T
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -189,7 +189,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: MOUSE, type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -231,7 +231,7 @@ combos:
   k: Gui+RIGHT ARROW
 - p: [1, 2]
   k: Hyper+[
-- p: [2, 3]
+- p: [3, 4]
   k: Hyper+]
 - p: [1, 2, 3]
   k: Hyper+=
