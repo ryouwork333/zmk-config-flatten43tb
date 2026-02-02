@@ -37,7 +37,7 @@ layers:
   - {t: '-', h: FUNCTION}
   - Hyper+F1
   - Hyper+F12
-  - Hyper+F11
+  - {t: Hyper+F11, h: MOUSE}
   - LEFT ALT
   - {t: SPACE, h: LEFT GUI}
   - {t: LANGUAGE 2, h: LEFT SHIFT}
@@ -213,7 +213,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
