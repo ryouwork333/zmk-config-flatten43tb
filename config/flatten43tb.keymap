@@ -70,7 +70,7 @@
 
         r-split {
             bindings = <&kp LS(LA(LC(LG(RIGHT_BRACKET))))>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
         };
 
         full {
@@ -153,9 +153,9 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                    &kp E                    &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I    &kp O                &lt 2 P
-&mt LCTRL A             &kp S                    &lt 4 D                  &kp F         &kp G               &kp LS(LG(LC(LA(F16))))        &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K      &mt RIGHT_CONTROL L  &lt 1 ENTER
-&kp Z                   &kp X                    &kp C                    &kp V         &kp B               &kp LS(LA(LC(LG(F15))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &kp COMMA  &kp DOT              &kp MINUS
+&kp Q                   &kp W                    &kp E                    &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I    &kp O                &kp P
+&mt LCTRL A             &kp S                    &kp D                    &kp F         &kp G               &kp LS(LG(LC(W)))              &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K      &mt RIGHT_CONTROL L  &lt 1 ENTER
+&kp Z                   &kp X                    &kp C                    &kp V         &kp B               &kp LS(LA(LC(LG(F15))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &kp COMMA  &kp DOT              &lt 2 MINUS
 &kp LS(LC(LA(LG(F1))))  &kp LA(LS(LC(LG(F12))))  &kp LS(LA(LC(LG(F11))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1      &kp BACKSPACE                                         &mt LS(LA(LC(LG(F2)))) ESCAPE
             >;
 
@@ -173,10 +173,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &trans                                        &kp LG(LS(LC(W)))  &kp LG(T)  &kp LG(L)  &kp LG(W)      &trans
-&trans  &kp F4  &kp F5  &kp F6  &trans  &trans      &kp LG(LS(LC(NUMBER_4)))  &trans             &trans     &trans     &kp LG(LS(T))  &trans
-&trans  &kp F1  &kp F2  &kp F3  &trans  &trans      &kp LS(LG(NUMBER_4))      &trans             &trans     &trans     &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans                    &trans                                                  &trans
+&trans  &kp F7  &kp F8  &kp F9  &trans                                        &trans  &trans  &trans  &trans  &trans
+&trans  &kp F4  &kp F5  &kp F6  &trans  &trans      &kp LG(LS(LC(NUMBER_4)))  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &trans  &trans      &kp LS(LG(NUMBER_4))      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans                    &trans                          &trans
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -194,7 +194,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &mo 4   &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
