@@ -13,6 +13,7 @@
  * Default transform
  * ========================= */
 &default_transform {
+    /* 物理配列に合わせて元の値を維持 */
     col-offset = <6>;
 };
 
@@ -56,7 +57,7 @@
 };
 
 /* =========================
- * SPI pin control
+ * SPI pin control (STABLE / HALF-DUPLEX)
  * ========================= */
 &pinctrl {
     spi0_default: spi0_default {
@@ -64,8 +65,8 @@
             psels = <
                 NRF_PSEL(SPIM_SCK,  0, 5)
                 NRF_PSEL(SPIM_MOSI, 0, 4)
-                /* ★まずはここを 0,3 で試す。無反応なら 0,6 → 0,2 */
-                NRF_PSEL(SPIM_MISO, 0, 6)
+                /* MOSI/MISO共通（基板配線に合わせる） */
+                NRF_PSEL(SPIM_MISO, 0, 4)
             >;
         };
     };
@@ -75,7 +76,7 @@
             psels = <
                 NRF_PSEL(SPIM_SCK,  0, 5)
                 NRF_PSEL(SPIM_MOSI, 0, 4)
-                NRF_PSEL(SPIM_MISO, 0, 6)
+                NRF_PSEL(SPIM_MISO, 0, 4)
             >;
             low-power-enable;
         };
@@ -98,6 +99,8 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
+
+    /* 基板既定のCS/IRQを維持 */
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
@@ -105,8 +108,8 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
 
-        /* 安定性重視。必要なら後で上げられる */
-        spi-max-frequency = <2000000>;
+        /* 実用安定重視：通信を低速化 */
+        spi-max-frequency = <500000>;
 
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
@@ -114,7 +117,7 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        /* 初動を軽く */
-        cpi = <1200>;
+        /* 初動と誤爆のバランスが良い値 */
+        cpi = <1000>;
     };
 };
