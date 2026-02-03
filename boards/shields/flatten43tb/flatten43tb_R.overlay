@@ -13,7 +13,7 @@
  * Default transform
  * ========================= */
 &default_transform {
-    /* 物理列数に合わせる（kscan0が5列なので5） */
+    /* kscan0 が5列なので5 */
     col-offset = <5>;
 };
 
@@ -39,19 +39,15 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /*
-         * Auto mouse layer = 4 (200ms timeout)
-         * Manual fixed layer = 5 (MO(5) or TG(5) in keymap)
-         */
+        /* Auto mouse layer = 4 (200ms timeout) */
         input-processors = <
             &zip_temp_layer 4 200
-            &zip_hold_layer 5
         >;
     };
 
     scroller {
-        /* Scroll works on scroll-layer + mouse-layer + fixed-layer */
-        layers = <3 4 5>;
+        /* Scroll works on scroll-layer + mouse-layer */
+        layers = <3 4>;
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
@@ -110,7 +106,7 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
 
-        /* 安定性重視。必要なら後で 4MHz まで上げられる */
+        /* 安定性重視。必要なら後で上げられる */
         spi-max-frequency = <2000000>;
 
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
@@ -119,7 +115,7 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        /* 初動を軽くするために解像度アップ */
+        /* 初動を軽く */
         cpi = <1200>;
     };
 };
