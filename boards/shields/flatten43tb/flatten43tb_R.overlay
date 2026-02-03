@@ -13,8 +13,7 @@
  * Default transform
  * ========================= */
 &default_transform {
-    /* kscan0 が5列なので5 */
-    col-offset = <5>;
+    col-offset = <6>;
 };
 
 /* =========================
