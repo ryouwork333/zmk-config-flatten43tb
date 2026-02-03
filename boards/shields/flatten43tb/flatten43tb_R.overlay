@@ -3,59 +3,100 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 
+/* =========================
+ * Root
+ * ========================= */
+ / {
+ };
+
+/* =========================
+ * Default transform
+ * ========================= */
 &default_transform {
-    col-offset = <6>;
+    /* 物理列数に合わせる（kscan0が5列なので5） */
+    col-offset = <5>;
 };
 
+/* =========================
+ * Key scan
+ * ========================= */
 &kscan0 {
-        col-gpios
-            = <&xiao_d 10 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 7 GPIO_ACTIVE_HIGH>
-            , <&gpio0 10 GPIO_ACTIVE_HIGH>
-            ;
+    col-gpios
+        = <&xiao_d 10 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 9  GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8  GPIO_ACTIVE_HIGH>
+        , <&xiao_d 7  GPIO_ACTIVE_HIGH>
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        ;
 };
 
-/ {
+/* =========================
+ * Trackball input pipeline
+ * ========================= */
+ / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 200>;
-       
+
+        /*
+         * Auto mouse layer = 4 (200ms timeout)
+         * Manual fixed layer = 5 (MO(5) or TG(5) in keymap)
+         */
+        input-processors = <
+            &zip_temp_layer 4 200
+            &zip_hold_layer 5
+        >;
+    };
+
     scroller {
-        layers = <3>;
+        /* Scroll works on scroll-layer + mouse-layer + fixed-layer */
+        layers = <3 4 5>;
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
             &zip_scroll_scaler 1 16
         >;
     };
-    };
 };
 
+/* =========================
+ * SPI pin control
+ * ========================= */
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-                <NRF_PSEL(SPIM_MISO, 0, 4)>;
+            psels = <
+                NRF_PSEL(SPIM_SCK,  0, 5)
+                NRF_PSEL(SPIM_MOSI, 0, 4)
+                /* ★まずはここを 0,3 で試す。無反応なら 0,6 → 0,2 */
+                NRF_PSEL(SPIM_MISO, 0, 3)
+            >;
         };
     };
 
     spi0_sleep: spi0_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-                <NRF_PSEL(SPIM_MISO, 0, 4)>;
+            psels = <
+                NRF_PSEL(SPIM_SCK,  0, 5)
+                NRF_PSEL(SPIM_MOSI, 0, 4)
+                NRF_PSEL(SPIM_MISO, 0, 3)
+            >;
             low-power-enable;
         };
     };
 };
 
-&xiao_serial { status = "disabled"; };
+/* =========================
+ * Disable serial
+ * ========================= */
+&xiao_serial {
+    status = "disabled";
+};
 
+/* =========================
+ * SPI + Trackball device
+ * ========================= */
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -68,12 +109,17 @@
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
+
+        /* 安定性重視。必要なら後で 4MHz まで上げられる */
         spi-max-frequency = <2000000>;
+
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        invert-y;     // マウス操作のY軸を反転
-        cpi = <600>;  // マウス感度
+
+        /* 初動を軽くするために解像度アップ */
+        cpi = <1200>;
     };
 };
