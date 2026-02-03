@@ -13,7 +13,6 @@
  * Default transform
  * ========================= */
 &default_transform {
-    /* 物理配列に合わせて元の値を維持 */
     col-offset = <6>;
 };
 
@@ -45,9 +44,9 @@
         >;
     };
 
+    /* 元コードどおり：スクロールはレイヤー3のみで有効 */
     scroller {
-        /* Scroll works on scroll-layer + mouse-layer */
-        layers = <3 4>;
+        layers = <3>;
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
@@ -99,8 +98,6 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-
-    /* 基板既定のCS/IRQを維持 */
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
@@ -108,7 +105,7 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
 
-        /* 実用安定重視：通信を低速化 */
+        /* 安定運用 */
         spi-max-frequency = <500000>;
 
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
@@ -117,7 +114,10 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        /* 初動と誤爆のバランスが良い値 */
+        /* 元コードどおり：ポインタY反転はデバイス側で */
+        invert-y;
+
+        /* 実用バランス */
         cpi = <1000>;
     };
 };
