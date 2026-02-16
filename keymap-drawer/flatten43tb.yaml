@@ -20,7 +20,7 @@ layers:
   - Hyper+F13
   - H
   - J
-  - K
+  - {t: K, h: Hyper+F10}
   - {t: L, h: RIGHT CONTROL}
   - {t: ENTER, h: NUM}
   - Z
@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - Sft+Gui+Ctl+W
+  - Hyper+F16
   - Hyper+F14
   - N
   - M
