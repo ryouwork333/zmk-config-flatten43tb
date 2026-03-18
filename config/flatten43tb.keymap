@@ -9,7 +9,7 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <175>;
 };
 
 &mmv {
@@ -27,113 +27,79 @@
 };
 
 / {
-    input_processors {
-        zip_wheel_scaler: zip_wheel_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL>;
-            track-remainders;
-        };
-    };
-};
-
-/ {
     combos {
         compatible = "zmk,combos";
 
         tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <11 12>;
+            timeout-ms = <40>;
         };
 
         shift_tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
+            timeout-ms = <40>;
         };
 
         back {
             bindings = <&kp LG(LEFT_ARROW)>;
             key-positions = <18 19>;
+            timeout-ms = <40>;
         };
 
         next {
             bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <19 20>;
+            timeout-ms = <40>;
         };
 
         l-split {
             bindings = <&kp LS(LA(LC(LG(LEFT_BRACKET))))>;
             key-positions = <1 2>;
+            timeout-ms = <40>;
         };
 
         r-split {
             bindings = <&kp LS(LA(LC(LG(RIGHT_BRACKET))))>;
             key-positions = <3 4>;
+            timeout-ms = <40>;
         };
 
         full {
             bindings = <&kp LS(LA(LC(LG(EQUAL))))>;
             key-positions = <1 2 3>;
+            timeout-ms = <50>;
         };
 
         exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <31 30>;
+            timeout-ms = <40>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <32 31>;
+            timeout-ms = <40>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <5 6>;
+            timeout-ms = <40>;
         };
 
         menu {
             bindings = <&kp BACKSLASH>;
             key-positions = <8 9>;
+            timeout-ms = <40>;
         };
 
         half {
             bindings = <&kp LA(LS(LC(LG(Q))))>;
             key-positions = <2 4 3>;
-        };
-    };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
-
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        sensor_rotate_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        mouse_wheel_scroll: mouse_wheel_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-
-            tap-ms = <20>;
+            timeout-ms = <50>;
         };
     };
 
@@ -142,10 +108,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                    &kp E                      &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I                        &kp O                &kp P
-&mt LCTRL A             &kp S                    &kp D                      &lt 5 F       &kp G               &kp LS(LG(LC(LA(F15))))        &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K                          &mt RIGHT_CONTROL L  &lt 1 ENTER
-&kp Z                   &kp X                    &kp C                      &kp V         &kp B               &kp LS(LG(LC(LA(F16))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &mt LA(LC(LG(LS(F17)))) COMMA  &kp DOT              &lt 2 MINUS
-&kp LS(LC(LA(LG(F1))))  &kp LA(LS(LC(LG(F12))))  &lt 4 LS(LA(LC(LG(F11))))  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1      &kp BACKSPACE                                                             &mt LS(LA(LC(LG(F2)))) ESCAPE
+&kp Q                   &kp W                    &kp E                              &kp R         &kp T                                                                       &kp Y          &kp U  &lt 3 I                        &kp O                &kp P
+&mt LCTRL A             &kp S                    &kp D                              &lt 4 F       &kp G               &kp LS(LG(LC(LA(F15))))        &kp LA(LS(LC(LG(F13))))  &kp H          &kp J  &kp K                          &mt RIGHT_CONTROL L  &lt 1 ENTER
+&kp Z                   &kp X                    &kp C                              &kp V         &kp B               &kp LS(LG(LC(LA(F16))))        &kp LS(LA(LC(LG(F14))))  &kp N          &kp M  &mt LA(LC(LG(LS(F17)))) COMMA  &kp DOT              &lt 2 MINUS
+&kp LS(LC(LA(LG(F1))))  &kp LA(LS(LC(LG(F12))))  &kp LS(LA(LC(LG(F11))))            &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mt LEFT_SHIFT LANGUAGE_2      &mt RIGHT_GUI LANG1      &kp BACKSPACE                                                             &mt LS(LA(LC(LG(F2)))) ESCAPE
             >;
         };
 
@@ -165,8 +131,6 @@
 &trans  &kp F1  &kp F2  &kp F3  &trans  &trans      &kp LS(LG(NUMBER_4))      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans                    &trans                          &trans
             >;
-
-            sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         SCROLL {
@@ -180,19 +144,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
-            >;
-        };
-
-        click {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                               &trans
             >;
         };
     };
