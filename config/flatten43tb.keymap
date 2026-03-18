@@ -97,7 +97,7 @@
         };
 
         half {
-            bindings = <&kp LA(LS(LC(LG(T))))>;
+            bindings = <&kp LA(LS(LC(LG(B))))>;
             key-positions = <2 4 3>;
             timeout-ms = <50>;
         };
