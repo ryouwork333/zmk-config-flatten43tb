@@ -96,8 +96,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Hyper+I
+  - Hyper+O
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F4
@@ -105,11 +105,11 @@ layers:
   - F6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Sft+Ctl+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Hyper+J
+  - Hyper+K
+  - Hyper+L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
@@ -117,7 +117,7 @@ layers:
   - F3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Gui+4
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
