@@ -30,8 +30,8 @@
     status = "okay";
     device = <&trackball>;
 
-    /* 一時レイヤー切替（例: Layer4） */
-    input-processors = <&zip_temp_layer 4 300>;
+    /* AML: トラックボール停止後200msでLayer4解除 */
+    input-processors = <&zip_temp_layer 4 200>;
 
     /* スクロール動作設定（Layer3で有効） */
     scroller {
