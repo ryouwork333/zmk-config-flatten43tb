@@ -386,7 +386,7 @@ path.combo {
 <path d="M196,28 l-37,0" class="combo"/>
 <path d="M196,28 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="15" width="28" height="26" class="combo"/>
-<text x="196" y="28" class="combo tap">Hyper+Q</text>
+<text x="196" y="28" class="combo tap">Hyper+T</text>
 </g>
 </g>
 </g>
@@ -661,7 +661,7 @@ path.combo {
 <path d="M196,28 l-37,0" class="combo"/>
 <path d="M196,28 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="15" width="28" height="26" class="combo"/>
-<text x="196" y="28" class="combo tap">Hyper+Q</text>
+<text x="196" y="28" class="combo tap">Hyper+T</text>
 </g>
 </g>
 </g>
@@ -893,7 +893,7 @@ path.combo {
 <path d="M196,28 l-37,0" class="combo"/>
 <path d="M196,28 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="15" width="28" height="26" class="combo"/>
-<text x="196" y="28" class="combo tap">Hyper+Q</text>
+<text x="196" y="28" class="combo tap">Hyper+T</text>
 </g>
 </g>
 </g>
@@ -1145,7 +1145,7 @@ path.combo {
 <path d="M196,28 l-37,0" class="combo"/>
 <path d="M196,28 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="15" width="28" height="26" class="combo"/>
-<text x="196" y="28" class="combo tap">Hyper+Q</text>
+<text x="196" y="28" class="combo tap">Hyper+T</text>
 </g>
 </g>
 </g>
@@ -1383,7 +1383,7 @@ path.combo {
 <path d="M196,28 l-37,0" class="combo"/>
 <path d="M196,28 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="15" width="28" height="26" class="combo"/>
-<text x="196" y="28" class="combo tap">Hyper+Q</text>
+<text x="196" y="28" class="combo tap">Hyper+T</text>
 </g>
 </g>
 </g>
