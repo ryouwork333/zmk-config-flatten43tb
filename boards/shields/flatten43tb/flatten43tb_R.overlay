@@ -45,24 +45,22 @@
 };
 
 /* -------------------------------
- * SPI ピン設定
+ * SPI ピン設定（上流準拠）
  * ------------------------------- */
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
-            psels =
-                <NRF_PSEL(SPIM_SCK,  0, 5)>,
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-                <NRF_PSEL(SPIM_MISO, 0, 3)>;
+                <NRF_PSEL(SPIM_MISO, 0, 4)>;
         };
     };
 
     spi0_sleep: spi0_sleep {
         group1 {
-            psels =
-                <NRF_PSEL(SPIM_SCK,  0, 5)>,
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-                <NRF_PSEL(SPIM_MISO, 0, 3)>;
+                <NRF_PSEL(SPIM_MISO, 0, 4)>;
             low-power-enable;
         };
     };
@@ -99,7 +97,7 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        invert-y;          /* Y軸反転 */
-        cpi = <800>;       /* 感度 */
+        invert-y;     /* Y軸反転 */
+        cpi = <400>;  /* 上流デフォルト感度 */
     };
 };
