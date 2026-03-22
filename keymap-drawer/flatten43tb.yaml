@@ -35,7 +35,7 @@ layers:
   - {t: ',', h: Hyper+F17}
   - .
   - {t: '-', h: FUNCTION}
-  - Hyper+F1
+  - {t: Hyper+F1, h: Hyper+F3}
   - Hyper+F12
   - Hyper+F11
   - LEFT ALT
