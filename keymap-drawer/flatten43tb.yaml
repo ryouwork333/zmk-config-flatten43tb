@@ -196,8 +196,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - '&mkp MB3'
   - '&mkp MB2'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -245,3 +245,5 @@ combos:
   k: \
 - p: [2, 4, 3]
   k: Hyper+B
+- p: [0, 1]
+  k: Hyper+Q
